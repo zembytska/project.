@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="половина">
+    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="full">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson1/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson1/main.js" afterDir="false" />
@@ -58,7 +58,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675196687035</updated>
       <workItem from="1675196691960" duration="5602000" />
-      <workItem from="1675238946257" duration="7275000" />
+      <workItem from="1675238946257" duration="7475000" />
+      <workItem from="1675249720556" duration="5745000" />
     </task>
     <task id="LOCAL-00001" summary="половина">
       <created>1675202816883</created>
@@ -67,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675202816883</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="full">
+      <created>1675246886360</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675246886360</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +83,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="половина" />
-    <option name="LAST_COMMIT_MESSAGE" value="половина" />
+    <MESSAGE value="full" />
+    <option name="LAST_COMMIT_MESSAGE" value="full" />
   </component>
 </project>
