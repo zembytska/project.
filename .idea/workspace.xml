@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="залишилось останнє">
+    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="ready">
+      <change afterPath="$PROJECT_DIR$/lessons/lesson3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lessons/lesson3/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessons/lesson2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson2/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,9 @@
       <workItem from="1675371175531" duration="4509000" />
       <workItem from="1675448701396" duration="17494000" />
       <workItem from="1675504646998" duration="9658000" />
-      <workItem from="1675544593763" duration="1704000" />
+      <workItem from="1675544593763" duration="1741000" />
+      <workItem from="1675681872921" duration="162000" />
+      <workItem from="1675796655437" duration="8042000" />
     </task>
     <task id="LOCAL-00001" summary="половина">
       <created>1675202816883</created>
@@ -108,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675515396560</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ready">
+      <created>1675546329721</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675546329721</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +130,7 @@
     <MESSAGE value="new" />
     <MESSAGE value="new2" />
     <MESSAGE value="залишилось останнє" />
-    <option name="LAST_COMMIT_MESSAGE" value="залишилось останнє" />
+    <MESSAGE value="ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready" />
   </component>
 </project>
