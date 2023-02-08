@@ -18,26 +18,83 @@ for (let autor of autors) {
 
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
-let users = [
-    {name: 'vasya', age: 31, status: false},
-    {name: 'petya', age: 30, status: true},
-    {name: 'kolya', age: 29, status: true},
-    {name: 'olya', age: 28, status: false},
-    {name: 'max', age: 30, status: true},
-    {name: 'anya', age: 31, status: false},
-    {name: 'oleg', age: 28, status: false},
-    {name: 'andrey', age: 29, status: true},
-    {name: 'masha', age: 30, status: true},
-    {name: 'olya', age: 31, status: false},
-   {name: 'max', age: 31, status: true}
+let colors = [
+    {name: 'black', status: false},
+    {name: 'white', status: true},
+    {name: 'blue',  status: true},
+    {name: 'yellow',  status: false},
+    {name: 'pink',  status: true},
+    {name: 'braun',  status: false},
+    {name: 'grey',  status: false},
+    {name: 'red',  status: true},
+    {name: 'orange', status: true},
+    {name: 'green',  status: false},
+   {name: 'purple', status: true}
 ];
-for (let i = 0; i < users.length; i++) {
-    const user = users[i];
-    document.write(`<div>${user.name} ${user.age} ${user.status}</div>`);
+for (let i = 0; i < colors.length; i++) {
+    const color = colors[i];
+    document.write(`<div>${color.name} ${color.status}</div>`);
  }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-//
+ let children = [
+     {name: 'oleg', age: 4, status: false},
+     {name: 'ivan', age: 3, status: false},
+     {name: 'lera', age: 5, status: false},
+     {name: 'ira', age: 6, status: false},
+     {name: 'anna', age: 3, status: false},
+     {name: 'ganna', age: 3, status: false},
+     {name: 'bogdana', age: 1, status: false},
+     {name: 'masha', age: 4, status: false},
+     {name: 'vlad', age: 5, status: false},
+     {name: 'inna', age: 6,  status: false},
+     {name: 'misha', age: 5, status: false},
+     {name: 'bogdan', age: 3, status: false},
+     {name: 'vova', age: 3, status: false},
+     {name: 'sasha', age: 2, status: false},
+     {name: 'natasha', age: 4, status: false},
+     {name: 'karina', age: 5, status: false},
+     {name: 'dasha', age: 5, status: false},
+     {name: 'olena', age: 3, status: false},
+     {name: 'makar', age: 5, status: false},
+     {name: 'oleg', age: 4, status: false},
+ ]
+
+//while (child = children) {
+   // document.write(`<div>
+//<h1>${child.name} ${child.age} ${child.status}</h1></div>`)
+//}
+
+// - За допомогою циклу w{hile вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+let countries = [
+
+    {name:'Ukraine',city:'Kyiv'},
+    {name:'Ukraine',city:'Lviv'},
+    {name:'Poland',city:'Gdansk'},
+    {name:'Brazil',city:'Brasilia'},
+    {name:'Bulgaria',city:'Sofia'},
+    {name:'Canada',city:'Ottawa'},
+    {name:'Cuba',city:'Havana'},
+    {name:'Cyprus',city:'Nicosia'},
+    {name:'Czechia',city:'Prague'},
+    {name:'Ukraine',city:'Odessa'},
+    {name:'Denmark',city:'Copenhagen'},
+    {name:'Egypt',city:'Cairo'},
+    {name:'Ukraine',city:'Donetsk'},
+    {name:'Ukraine',city:'Lutsk'},
+    {name:'Finland',city:'Helsinki'},
+    {name:'France',city:'Paris'},
+    {name:'Italy',city:'Rome'},
+    {name:'Greece',city:'Athens'},
+    {name:'Hungary',city:'Budapest'},
+    {name:'India',city:'New Delhi'},
+]
+let i = 0;
+ while (i < countries.length) {
+     let country = countries[i];
+    document.write(`<div>
+<h1>${country.name} ${country.city}</h1></div>`);
+    i++;
+}
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
