@@ -37,31 +37,34 @@ for (let i = 0; i < colors.length; i++) {
  }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
  let children = [
-     {name: 'oleg', age: 4, status: false},
-     {name: 'ivan', age: 3, status: false},
-     {name: 'lera', age: 5, status: false},
-     {name: 'ira', age: 6, status: false},
-     {name: 'anna', age: 3, status: false},
-     {name: 'ganna', age: 3, status: false},
-     {name: 'bogdana', age: 1, status: false},
-     {name: 'masha', age: 4, status: false},
-     {name: 'vlad', age: 5, status: false},
-     {name: 'inna', age: 6,  status: false},
-     {name: 'misha', age: 5, status: false},
-     {name: 'bogdan', age: 3, status: false},
-     {name: 'vova', age: 3, status: false},
-     {name: 'sasha', age: 2, status: false},
-     {name: 'natasha', age: 4, status: false},
-     {name: 'karina', age: 5, status: false},
-     {name: 'dasha', age: 5, status: false},
-     {name: 'olena', age: 3, status: false},
-     {name: 'makar', age: 5, status: false},
-     {name: 'oleg', age: 4, status: false},
+     {name: 'oleg', age: 4},
+     {name: 'ivan', age: 3},
+     {name: 'lera', age: 5},
+     {name: 'ira', age: 6},
+     {name: 'anna', age: 3},
+     {name: 'ganna', age: 3},
+     {name: 'bogdana', age: 1},
+     {name: 'masha', age: 4},
+     {name: 'vlad', age: 5},
+     {name: 'inna', age: 6},
+     {name: 'misha', age: 5},
+     {name: 'bogdan', age: 5},
+     {name: 'vova', age: 3,},
+     {name: 'sasha', age: 2},
+     {name: 'natasha', age: 4},
+     {name: 'karina', age: 5},
+     {name: 'dasha', age: 5},
+     {name: 'olena', age: 3},
+     {name: 'makar', age: 5},
+     {name: 'oleg', age: 4},
  ]
 
-//while (child = children) {
-   // document.write(`<div>
-//<h1>${child.name} ${child.age} ${child.status}</h1></div>`)
+//let j = 0;
+//while (j < children.length) {
+   //et child = children
+    //ocument.write(`<div><h1>${child.name} ${child.age}</h1></div>`);
+    //++;
+
 //}
 
 // - За допомогою циклу w{hile вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
@@ -88,13 +91,12 @@ let countries = [
     {name:'Hungary',city:'Budapest'},
     {name:'India',city:'New Delhi'},
 ]
-let i = 0;
- while (i < countries.length) {
-     let country = countries[i];
-    document.write(`<div>
-<h1>${country.name} ${country.city}</h1></div>`);
-    i++;
-}
+//let i = 0;
+ //while (i < countries.length) {
+     //let country = countries[i];
+    //document.write(`<div><h1>${country.name} ${country.city}</h1></div>`);
+    //i++;
+//}
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
@@ -113,8 +115,16 @@ let i = 0;
 //     </ul>
 //
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
-//
-// -----------------------------------------------
+let listofitems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+
+document.write (`<ul>`);
+for (const listofitem of listofitems){
+        document.write(`<li>${listofitem}</li>`);}
+
+    document.write (`</ul>`);
+
+  
+
 //
 //     Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону  Зробити адекватну стилізацію
@@ -151,29 +161,40 @@ let products = [
 for (let i=0; i< products.length; i++) {
     const product = products[i];
     document.write(`<div class="product-card">
-   <h1>${product.title} - ${product.price} </h1>
+   <h3>${product.title} ${product.price} </h3>
    <img src="${product.image}" alt="">
-</div>
-    `)
-
-}
+</div>`);}
 
 // --------------------
 //     є масив
-// let users = [
-//     {name: 'vasya', age: 31, status: false},
-//     {name: 'petya', age: 30, status: true},
-//     {name: 'kolya', age: 29, status: true},
-//     {name: 'olya', age: 28, status: false},
-//     {name: 'max', age: 30, status: true},
-//     {name: 'anya', age: 31, status: false},
-//     {name: 'oleg', age: 28, status: false},
-//     {name: 'andrey', age: 29, status: true},
-//     {name: 'masha', age: 30, status: true},
-//     {name: 'olya', age: 31, status: false},
-//     {name: 'max', age: 31, status: true}
-// ];
-// за допомоги циклу вивести:
-//     - користувачів зі статусом true
-// - користувачів зі статусом false
-// - користувачів які старші за 30 років
+let users = [
+     {name: 'vasya', age: 31, status: false},
+     {name: 'petya', age: 30, status: true},
+     {name: 'kolya', age: 29, status: true},
+     {name: 'olya', age: 28, status: false},
+     {name: 'max', age: 30, status: true},
+     {name: 'anya', age: 31, status: false},
+     {name: 'oleg', age: 28, status: false},
+     {name: 'andrey', age: 29, status: true},
+     {name: 'masha', age: 30, status: true},
+     {name: 'olya', age: 31, status: false},
+     {name: 'max', age: 31, status: true}
+];
+
+
+
+for (const user of users) {
+    if (user.status) {
+       document.write(`${user.name} -- ${user.age}--${user.status}`);
+    }
+}
+ for (const user of users) {
+     if(!user.status){
+         console.log(user);
+     }
+ }
+ for (const user of users) {
+     if(user.age > 30) {
+         console.log(user);
+     }
+ }
