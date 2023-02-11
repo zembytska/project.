@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="2">
+    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson4/main.js" afterDir="false" />
     </list>
@@ -72,7 +72,7 @@
       <workItem from="1675861443163" duration="20412000" />
       <workItem from="1675943018806" duration="7005000" />
       <workItem from="1676029376236" duration="20197000" />
-      <workItem from="1676104395055" duration="4477000" />
+      <workItem from="1676104395055" duration="29402000" />
     </task>
     <task id="LOCAL-00001" summary="половина">
       <created>1675202816883</created>
@@ -165,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676069207342</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="3">
+      <created>1676109140398</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109140398</updated>
+    </task>
+    <task id="LOCAL-00015" summary="3">
+      <created>1676128617012</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676128617012</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,10 +191,10 @@
     <MESSAGE value="new" />
     <MESSAGE value="new2" />
     <MESSAGE value="залишилось останнє" />
-    <MESSAGE value="3" />
     <MESSAGE value="ready" />
     <MESSAGE value="1" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
 </project>
