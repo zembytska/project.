@@ -82,18 +82,34 @@ function copy(howmanytimes,description) {
     </ul>
     `
     );
-}
 
+}
 copy(2,'menu');
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+const numbers = [1, 2, 3, 'Hi', true];
+function too (item) {
+    document.write(`<ul>`)}
+    for (const item of numbers) {
+        document.write(`<li>${item}</li>`);
+    }
+    document.write(`</ul>`);
+
+
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+
 //- створити функцію яка повертає найменьше число з масиву
+let nomers = [15, 6, 18, 22, 12, 88, 9];
 
-        let nomers = [15, 6, 18, 22];
+// function smalNumber(min) {
+  for (min of nomers) {
+      for (i = 1; i < min; ++i) {
+          if (nomers[i] < min) min = nomers[i];
+      }
 
+  }
+console.log(min)
 
-console.log(nomers)
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 let sum = [1, 2, 10]
 function sum2(num1, num2, num3) {
