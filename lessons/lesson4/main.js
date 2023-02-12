@@ -100,7 +100,7 @@ function too (item) {
 
 //- створити функцію яка повертає найменьше число з масиву
 
-function smalNumberss(numbers) {
+function smalNumberss(numberss) {
     let number = numberss.length;
     minimum = numberss[ number-1];
     while (number--){
