@@ -123,29 +123,55 @@ writer('snow', 'sasha', '22')
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
     let sum = [1, 2, 10]
 
-    function sum2(num1, num2, num3) {
-        return num1 + num2 + num3;
+    function sum2(numbers) {
+    let basket = 0;
+    for (const number of numbers) {
+        basket *= number;
+    }
+        return basket;
     }
 
-    console.log(sum2(1, 2, 10));
+console.log(sum2(numbers));
 
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
-    function swap(index1, index2, ...x) {
-        console.log(x)
+    function swap(arr, index1, index2) {
+
+      let v1 = arr[index1];
+      let v2 = arr[index2];
+      arr [index1] = v2;
+      arr [index2] = v1;
+      return arr;
     }
 
-    swap(11, 22, 22, 11, 33, 44);
+console.log(swap([11,22,33,44,55],0,4));
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)}
-    function exchange(sumUAH) {
-        //let number = exchange(200)
-        let currencyValues = 40 / 1;
-        let exchangeCurrency = 38 * 1;
-        let currency = sumUAH / currencyValues;
-        let exchange = sumUAH * exchangeCurrency;
-        return currency;
+    function exchange(uah,currencies, exitCurrency) {
+        for (const item of currencies){
+            if (item.currency === exitCurrency){
+                return uah / item.value;
+            }
+        }
     }
 
-    let nombers = exchange(200)
-    console.log(nombers)
+
+
+
+    exchange(10000,
+        [
+            {currency: 'USD',value: 40},
+            {currency: 'EUR', value: 42},
+            {currency:'GBP', value: 43}
+        ],
+        'USD'
+        );
+
+// let nombers = exchange(200)
+   // console.log(nombers)
+//let number = exchange(200)
+// let currencyValues = 40 / 1;
+//let exchangeCurrency = 38 * 1;
+//let currency = sumUAH / currencyValues;
+//let exchange = sumUAH * exchangeCurrency;
+//return currency;
