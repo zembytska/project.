@@ -97,59 +97,55 @@ function too (item) {
 
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+let namses = [
+    {
+        id: 'snow',
+        name: 'masha',
+        age: 22
+    },
+];
 
-//- створити функцію яка повертає найменьше число з масиву
+function writer (id,name,age) {
+    document.write(
+        ` <div>
+          <p>${id}</p>
+          <p>${name}</p>
+          <p>${age}</p>
+</div>
+        `
+    );
 
-function smalNumberss(numberss) {
-    let number = numberss.length;
-    minimum = numberss[ number-1];
-    while (number--){
-        if (numberss[number]< minimum){
-            minimum = numberss[number]
-        }
-    }
-    return minimum;
-};
-let numberss = [1,7,9];
-let m = smalNumberss(numberss);
-console.log(m)
+}
+writer('snow', 'sasha', '22')
+
 
 
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-     let sum = [1, 2, 10]
+    let sum = [1, 2, 10]
 
-     function sum2(num1, num2, num3) {
-         return num1 + num2 + num3;
-     }
+    function sum2(num1, num2, num3) {
+        return num1 + num2 + num3;
+    }
 
-     console.log(sum2(1, 2, 10));
+    console.log(sum2(1, 2, 10));
 
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
-     function swap(index1, index2, ...x) {
-         console.log(x)
-     }
+    function swap(index1, index2, ...x) {
+        console.log(x)
+    }
 
-     swap(11, 22, 22, 11, 33, 44)
+    swap(11, 22, 22, 11, 33, 44);
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)}
-     function exchange(sumUAH) {
-         //let number = exchange(200)
-         let currencyValues = 40 / 1;
-         let exchangeCurrency = 38 * 1;
-         let currency = sumUAH / currencyValues;
-         let exchange = sumUAH * exchangeCurrency;
-         return currency;
-     }
+    function exchange(sumUAH) {
+        //let number = exchange(200)
+        let currencyValues = 40 / 1;
+        let exchangeCurrency = 38 * 1;
+        let currency = sumUAH / currencyValues;
+        let exchange = sumUAH * exchangeCurrency;
+        return currency;
+    }
 
-     let nombers = exchange(200)
- console.log(nombers);
-
-
-
-
-
-
-
-
-
+    let nombers = exchange(200)
+    console.log(nombers)
