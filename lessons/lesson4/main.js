@@ -148,25 +148,28 @@ console.log(swap([11,22,33,44,55],0,4));
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)}
     function exchange(uah,currencies, exitCurrency) {
-        for (const item of currencies){
-            if (item.currency === exitCurrency){
-                return uah / item.value;
+        for (const item of currencies) {
+            if (item.currency === exitCurrency) {
+                return uah / item.value; {
+
+                }
             }
+
         }
     }
 
 
 
 
-    exchange(10000,
+    exchange(10000),
         [
             {currency: 'USD',value: 40},
             {currency: 'EUR', value: 42},
             {currency:'GBP', value: 43}
-        ],
+        ]
         'USD'
-        );
 
+console.log(exchange(10000,40,42,))
 // let nombers = exchange(200)
    // console.log(nombers)
 //let number = exchange(200)
