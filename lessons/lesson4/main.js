@@ -60,7 +60,7 @@ writer('some fresh milk');
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 function goo(description) {
     document.write(
-    `
+        `
     <ul>
       <li>${description}</li>
       <li>${description}</li>
@@ -72,7 +72,6 @@ function goo(description) {
 goo('text');
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 function copy(howmanytimes,description) {
-    for (let i=0; i < howmanytimes; i++)
    document.write(
  `
    <ul>
@@ -82,7 +81,7 @@ function copy(howmanytimes,description) {
     </ul>
     `
     );
-
+    for (let i=0; i < howmanytimes; i++);
 }
 copy(2,'menu');
 
@@ -121,7 +120,7 @@ writer('snow', 'sasha', '22')
 
 
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-    let sum = [1, 2, 10]
+    let sum = [1, 2, 10];
 
     function sum2(numbers) {
     let basket = 0;
@@ -150,26 +149,21 @@ console.log(swap([11,22,33,44,55],0,4));
     function exchange(uah,currencies, exitCurrency) {
         for (const item of currencies) {
             if (item.currency === exitCurrency) {
-                return uah / item.value; {
+                return uah / item.value;
 
                 }
             }
-
-        }
     }
 
-
-
-
-    exchange(10000),
+    exchange(10000
         [
             {currency: 'USD',value: 40},
             {currency: 'EUR', value: 42},
             {currency:'GBP', value: 43}
-        ]
+        ],
         'USD'
+    )
 
-console.log(exchange(10000,40,42,))
 // let nombers = exchange(200)
    // console.log(nombers)
 //let number = exchange(200)
