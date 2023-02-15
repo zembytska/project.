@@ -96,22 +96,60 @@ objCreator(names);
 
 
 // - створити функцію яка повертає найменьше число з масиву
+minNum = (numbers)=> {
+    let min = numbers[0];
+    for (const number of numbers){
+            if (min > number){
+                min= number;
+            }
+        }
+return min;
+}
+
+console.log(minNum([-11, -22, -33, -23]));
+
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-
-
  let sum=(numberos)=> {
-    let basket = 0; {
-        for (const number of numberos)
-        basket = basket + number;
-    }
-
-
- }
-let number = [1,10];
-sum(number)
+     let basket = 0;
+         for (const number of numberos){
+       basket = basket + number;
+   }
+         return basket;
+  }
+ console.log(sum([1, 2, 10]))
 
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+let swap=(arr, index1, index2)=> {
+    let v1 = arr[index1];
+    let v2 = arr[index2];
+    arr [index1] = v2;
+    arr [index2] = v1;
+    return arr;
+}
+
+console.log(swap([11,22,33,44,55],0,4));
+
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 
+let exchange=(uah,currencies, exitCurrency)=> {
+    for (const item of currencies) {
+        if (item.currency === exitCurrency) {
+            result = uah / item.value;
+        }
+    }
+    return result;
+}
+
+
+exchange(
+    10000,
+    [
+        {currency: 'USD',value: 40},
+            {currency: 'EUR', value: 42},
+            {currency:'GBP', value: 43}
+        ],
+    'USD'
+)
+console.log(exchange(10000,'USD',40));
