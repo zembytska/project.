@@ -29,8 +29,11 @@ let numbers = [10,8,-7,55,987,-1011,0,1050,0];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
 
-let sort = nums.sort((a, b) => a-b);
+let sort = nums.sort((a, b) => b-a);
 console.log(sort);
+let sort2 = nums.sort((a,b) => a-b);
+console.log(sort);
+
 // - є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
