@@ -68,13 +68,16 @@ console.log(filterCourses);
 // - всі трефи від 9 та більше
 //
 //
-let find= color.find(value => value.color === 'red');
-console.log(find);
- // {
- //  cardSuit: '',  'spade', 'diamond','heart', 'clubs'
- //        value: '',  '6'-'10', 'ace','jack','queen','king','joker'
- //     color:'',  'red','black'
- // }
+//let find= color.find(value => value.color === 'red');
+//console.log(find);
+
+ {
+  cardSuit: '',  'spade', 'diamond','heart', 'clubs'
+     valrue: '',  '6'-'10', 'ace','jack','queen','king','joker'
+     color:'', 'red','black'
+
+  }
+
 
 //
 // Додатково по reduce
