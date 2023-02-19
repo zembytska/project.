@@ -23,8 +23,9 @@ let str = 'Ревуть воли як ясла повні';
 
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 let numbers = [10,8,-7,55,987,-1011,0,1050,0];
-
-
+// numbers.map(function (value,index){
+    // let
+// });
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 // sortNums(nums,'ascending') // [3,11,21]
@@ -115,7 +116,7 @@ let deckofcards = [
     {card: 'heart', value:'ace', color:'red'}
 ];
 // - знайти піковий туз
-let find= deckofcards.find(value => value.value === 'ace');
+let find= deckofcards.find(value => value.value === 'ace' &&value.card==='spade');
 console.log(find);
 
 //- всі шістки
@@ -128,7 +129,7 @@ console.log(filterCards);
 let filterDiamond = deckofcards.filter(value=> value.card==='diamond');
 console.log(filterDiamond);
 // - всі трефи від 9 та більше
-let filterCards9 = deckofcards.filter(value=> value.card ==='clubs' && value.value >= '9');
+let filterCards9 = deckofcards.filter( value => value.card === 'clubs' &&value.value >=9);
 console.log(filterCards9);
 
 
@@ -140,6 +141,79 @@ console.log(filterCards9);
 //     hearts:[],
 //     clubs:[]
 // }
+let deckofCards = [
+    {card: 'spade', value:'6', color:'black'},
+    {card: 'spade', value:'7', color:'black'},
+    {card: 'spade', value:'8', color:'black'},
+    {card: 'spade', value:'9', color:'black'},
+    {card: 'spade', value:'10', color:'black'},
+    {card: 'spade', value:'jack', color:'black'},
+    {card: 'spade', value:'queen', color:'black'},
+    {card: 'spade', value:'king', color:'black'},
+    {card: 'spade', value:'ace', color:'black'},
+    {card: 'clubs', value:'6', color:'black'},
+    {card: 'clubs', value:'7', color:'black'},
+    {card: 'clubs', value:'8', color:'black'},
+    {card: 'clubs', value:'9', color:'black'},
+    {card: 'clubs', value:'10', color:'black'},
+    {card: 'clubs',value:'jack', color:'black'},
+    {card: 'clubs', value:'queen', color:'black'},
+    {card: 'clubs', value:'king', color:'black'},
+    {card: 'clubs', value:'ace', color:'black'},
+    {card: 'diamond', value:'6', color:'red'},
+    {card: 'diamond', value:'7', color:'red'},
+    {card: 'diamond', value:'8', color:'red'},
+    {card: 'diamond', value:'9', color:'red'},
+    {card: 'diamond', value:'10', color:'red'},
+    {card: 'diamond', value:'jack', color:'red'},
+    {card: 'diamond', value:'queen', color:'red'},
+    {card: 'diamond', value:'king', color:'red'},
+    {card: 'diamond', value:'ace', color:'red'},
+    {card: 'heart', value:'6', color:'red'},
+    {card: 'heart', value:'7', color:'red'},
+    {card: 'heart', value:'8', color:'red'},
+    {card: 'heart', value:'9', color:'red'},
+    {card: 'heart', value:'10', color:'red'},
+    {card: 'heart', value:'jack', color:'red'},
+    {card: 'heart', value:'queen', color:'red'},
+    {card: 'heart', value:'king', color:'red'},
+    {card: 'heart', value:'ace', color:'red'}
+];
+let find2= deckofcards.find(value => value.card === 'heart');
+
+let reduse = deckofCards.reduce((acc, card) => {
+
+        acc.heart.push('heart');
+
+        acc.diamond.push(card);
+
+        acc.clubs.push(card)
+
+    return acc;
+},{heart: [], diamond: [],spade: [],clubs: []});
+console.log(reduse)
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
+let reduce2 = users.reduce((accumulator, user) => {
+    if (user.status) {
+        accumulator.statT.push(user);
+    } else  {
+        accumulator.statF.push(user);
+    }
+    return accumulator;
+    }, {statT:[], statF:[]});
+console.log(reduce2)
 // =========================
     // взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 // --написати пошук всіх об'єктів, в який в modules є sass
