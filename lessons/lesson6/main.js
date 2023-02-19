@@ -1,6 +1,7 @@
 // - Знайти та вивести довижину настипних стрінгових значень
 // 'hello world', 'lorem ipsum', 'javascript is cool'
-
+let strin2 = 'hello world, lorem ipsum, javascript is cool';
+console.log(strin2.length);
 // - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
 let strin = 'hello world, lorem ipsum, javascript is cool';
