@@ -66,20 +66,71 @@ console.log(filterCourses);
 // - всі червоні карти
 // - всі буби
 // - всі трефи від 9 та більше
+ // {
+ //  cardSuit: '',  'spade', 'diamond','heart', 'clubs'
+ //
+ //
+ //     value: '',  '6'-'10', 'ace','jack','queen','king','joker'
+ //
+ //
+ //     color:'',// 'red','black'
 //
-//
-//let find= color.find(value => value.color === 'red');
-//console.log(find);
+let deckofcards = [
+    {card: 'spade', value:'6', color:'black'},
+    {card: 'spade', value:'7', color:'black'},
+    {card: 'spade', value:'8', color:'black'},
+    {card: 'spade', value:'9', color:'black'},
+    {card: 'spade', value:'10', color:'black'},
+    {card: 'spade', value:'jack', color:'black'},
+    {card: 'spade', value:'queen', color:'black'},
+    {card: 'spade', value:'king', color:'black'},
+    {card: 'spade', value:'ace', color:'black'},
+    {card: 'clubs', value:'6', color:'black'},
+    {card: 'clubs', value:'7', color:'black'},
+    {card: 'clubs', value:'8', color:'black'},
+    {card: 'clubs', value:'9', color:'black'},
+    {card: 'clubs', value:'10', color:'black'},
+    {card: 'clubs',value:'jack', color:'black'},
+    {card: 'clubs', value:'queen', color:'black'},
+    {card: 'clubs', value:'king', color:'black'},
+    {card: 'clubs', value:'ace', color:'black'},
+    {card: 'diamond', value:'6', color:'red'},
+    {card: 'diamond', value:'7', color:'red'},
+    {card: 'diamond', value:'8', color:'red'},
+    {card: 'diamond', value:'9', color:'red'},
+    {card: 'diamond', value:'10', color:'red'},
+    {card: 'diamond', value:'jack', color:'red'},
+    {card: 'diamond', value:'queen', color:'red'},
+    {card: 'diamond', value:'king', color:'red'},
+    {card: 'diamond', value:'ace', color:'red'},
+    {card: 'heart', value:'6', color:'red'},
+    {card: 'heart', value:'7', color:'red'},
+    {card: 'heart', value:'8', color:'red'},
+    {card: 'heart', value:'9', color:'red'},
+    {card: 'heart', value:'10', color:'red'},
+    {card: 'heart', value:'jack', color:'red'},
+    {card: 'heart', value:'queen', color:'red'},
+    {card: 'heart', value:'king', color:'red'},
+    {card: 'heart', value:'ace', color:'red'}
+];
+// - знайти піковий туз
+let find= deckofcards.find(value => value.value === 'ace');
+console.log(find);
 
- {
-  cardSuit: '',  'spade', 'diamond','heart', 'clubs'
-     valrue: '',  '6'-'10', 'ace','jack','queen','king','joker'
-     color:'', 'red','black'
+//- всі шістки
+let filterCards6 = deckofcards.filter(value=> value.value ==='6');
+console.log(filterCards6);
+// - всі червоні карти
+let filterCards = deckofcards.filter(value=> value.color ==='red');
+console.log(filterCards);
+// - всі буби
+let filterDiamond = deckofcards.filter(value=> value.card==='diamond');
+console.log(filterDiamond);
+// - всі трефи від 9 та більше
+let filterCards9 = deckofcards.filter(value=> value.card ==='clubs' && value.value >= '9');
+console.log(filterCards9);
 
-  }
 
-
-//
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 // {
