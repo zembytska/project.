@@ -23,9 +23,7 @@ let str = 'Ревуть воли як ясла повні';
 
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 let numbers = [10,8,-7,55,987,-1011,0,1050,0];
-// numbers.map(function (value,index){
-    // let
-// });
+
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 // sortNums(nums,'ascending') // [3,11,21]
@@ -62,21 +60,7 @@ let coursesAndDurationArray = [
  let filterCourses = coursesAndDurationArray.filter(value=> value.monthDuration > 5);
 console.log(filterCourses);
 
-// описати колоду карт
-// - знайти піковий туз
-// - всі шістки
-// - всі червоні карти
-// - всі буби
-// - всі трефи від 9 та більше
- // {
- //  cardSuit: '',  'spade', 'diamond','heart', 'clubs'
- //
- //
- //     value: '',  '6'-'10', 'ace','jack','queen','king','joker'
- //
- //
- //     color:'',// 'red','black'
-//
+
 let deckofcards = [
     {card: 'spade', value:'6', color:'black'},
     {card: 'spade', value:'7', color:'black'},
@@ -129,9 +113,7 @@ console.log(filterCards);
 let filterDiamond = deckofcards.filter(value=> value.card==='diamond');
 console.log(filterDiamond);
 // - всі трефи від 9 та більше
-let filterCards9 = deckofcards.filter( value => value.card === 'clubs' &&value.value >=9);
-console.log(filterCards9);
-
+console.log(deckofcards.filter((card) => card.card === 'clubs' && ['9', '10', 'ace', 'jack', 'queen', 'king'].includes(card.value)));
 
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
@@ -141,7 +123,7 @@ console.log(filterCards9);
 //     hearts:[],
 //     clubs:[]
 // }
-let deckofCards = [
+let deckofcard = [
     {card: 'spade', value:'6', color:'black'},
     {card: 'spade', value:'7', color:'black'},
     {card: 'spade', value:'8', color:'black'},
@@ -179,41 +161,11 @@ let deckofCards = [
     {card: 'heart', value:'king', color:'red'},
     {card: 'heart', value:'ace', color:'red'}
 ];
-let find2= deckofcards.find(value => value.card === 'heart');
-
-let reduse = deckofCards.reduce((acc, card) => {
-
-        acc.heart.push('heart');
-
-        acc.diamond.push(card);
-
-        acc.clubs.push(card)
-
+const box = deckofcard.reduce((acc,current) => {
+    acc[current.card]. push(current);
     return acc;
-},{heart: [], diamond: [],spade: [],clubs: []});
-console.log(reduse)
-let users = [
-    {name: 'vasya', age: 31, status: false},
-    {name: 'petya', age: 30, status: true},
-    {name: 'kolya', age: 29, status: true},
-    {name: 'olya', age: 28, status: false},
-    {name: 'max', age: 30, status: true},
-    {name: 'anya', age: 31, status: false},
-    {name: 'oleg', age: 28, status: false},
-    {name: 'andrey', age: 29, status: true},
-    {name: 'masha', age: 30, status: true},
-    {name: 'olya', age: 31, status: false},
-    {name: 'max', age: 31, status: true}
-];
-let reduce2 = users.reduce((accumulator, user) => {
-    if (user.status) {
-        accumulator.statT.push(user);
-    } else  {
-        accumulator.statF.push(user);
-    }
-    return accumulator;
-    }, {statT:[], statF:[]});
-console.log(reduce2)
+}, { spade:[], diamond:[], heart:[], clubs:[] });
+console.log(box)
 // =========================
     // взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 // --написати пошук всіх об'єктів, в який в modules є sass
