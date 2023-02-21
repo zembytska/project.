@@ -22,8 +22,8 @@ let stringToarray = (str)=> str.split(' ');
 let str = 'Ревуть воли як ясла повні';
 
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
-let numbers = [10,8,-7,55,987,-1011,0,1050,0];
-
+let arr = [10,8,-7,55,987,-1011,0,1050,0];
+console.log(arr.map((num)=>num.toString()));
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 // sortNums(nums,'ascending') // [3,11,21]
@@ -170,7 +170,79 @@ console.log(box)
     // взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 // --написати пошук всіх об'єктів, в який в modules є sass
 // --написати пошук всіх об'єктів, в який в modules є docker
-
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+// --написати пошук всіх об'єктів, в який в modules є sass
+console.log(coursesArray.filter((item) =>item.modules.includes('sass')));
+// --написати пошук всіх об'єктів, в який в modules є docker
+console.log(coursesArray.filter((item) =>item.modules.includes('docker')));
 
 
 
