@@ -1,5 +1,4 @@
 
-
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
  function User (id, name, surname, email, phone) {
@@ -8,17 +7,41 @@
      this.surname = surname;
      this.email = email;
      this.phone = phone;
+     };
 
-     }
-console.log(User);
+     let users = [];
+    users.push (
+        new User (1,'sasha', 'ivanko','inako@gmail.com', '069599463131'),
+        new User(2,'ira','ivanko','123@gmail.com','0968775629'),
+        new User (3,'anna','nazarenko','1234gmail.com','0937456699'),
+        new User (4,'olga','petrenko','1234@gmail.com','0935556698'),
+        new User (5, 'petya','karpenko', '123@gmail.com','096465667899'),
+        new User(6,'vanya','panko','1234@gmail.com','0968885564'),
+        new User(7,'katya','zorya','122@gmail.com','096555889990'),
+        new User(8,'sasha','ivanko','112@gmail.com','133265666'),
+        new User(9,'pasha','petrenko','155@gmail.com','54654655'),
+        new User(10,'klava','rema','65464@gmail.com','55465465')
+)
+console.log(users);
 
-
-
- let user2 = new User (['gjgjk']);
-console.log(user2)
 
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
-//
+  let users1 = [];
+users1.push (
+    new User (1,'sasha', 'ivanko','inako@gmail.com', '069599463131'),
+    new User(2,'ira','ivanko','123@gmail.com','0968775629'),
+    new User (3,'anna','nazarenko','1234gmail.com','0937456699'),
+    new User (4,'olga','petrenko','1234@gmail.com','0935556698'),
+    new User (5, 'petya','karpenko', '123@gmail.com','096465667899'),
+    new User(6,'vanya','panko','1234@gmail.com','0968885564'),
+    new User(7,'katya','zorya','122@gmail.com','096555889990'),
+    new User(8,'sasha','ivanko','112@gmail.com','133265666'),
+    new User(9,'pasha','petrenko','155@gmail.com','54654655'),
+    new User(10,'klava','rema','65464@gmail.com','55465465')
+)
+console.log(users1);
+let filter =
+
 // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
 //
 // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
