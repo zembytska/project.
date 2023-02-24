@@ -101,9 +101,9 @@ Client.foobar;
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 let Clients1= [];
 Clients1.push (
-    new Client (1,'sasha', 'ivanko','inako@gmail.com', '069599463131',['1',' 2',' 3']),
-    new Client(2,'ira','ivanko','123@gmail.com', '0978974',['1',' 5','3','4']),
-    new Client (3,'anna','nazarenko','1234gmail.com','0937456699',['goods 10']),
+    new Client (1,'sasha', 'ivanko','inako@gmail.com', '069599463131',['3']),
+    new Client(2,'ira','ivanko','123@gmail.com', '0978974',['4']),
+    new Client (3,'anna','nazarenko','1234gmail.com','0937456699',['10']),
     new Client (4,'olga','petrenko','1234@gmail.com','09355566980','milk,juice'),
     new Client (5, 'petya','karpenko', '123@gmail.com','096465667899','meat','potato,tomato,tea'),
     new Client(6,'katya','zorya','122@gmail.com','096555889990','chocolate,milk'),
@@ -113,10 +113,10 @@ Clients1.push (
     new Client(10,'anna','karpenko','karp@gmail.com','0968772649','cookies,milk','cola','wine','cheese')
 );
 console.log(Clients1);
-let sort1 =order.sort((a,b)=> {
-    return b.goods - a.order;
+let sort1 =Clients1.sort((a,b)=> {
+    return b.order - a.order;
 });
-console.log(order)
+console.log(sort1)
 // - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 // -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
