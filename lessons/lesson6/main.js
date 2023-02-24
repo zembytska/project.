@@ -53,6 +53,7 @@ let coursesAndDurationArray = [
      {title: 'FullStack', monthDuration: 7},
      {title: 'Frontend', monthDuration: 4}
  ];
+
  let sort3 = coursesAndDurationArray.sort((a,b) => {
     return b.monthDuration - a.monthDuration;
  });
