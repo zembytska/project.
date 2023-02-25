@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/lessons/lesson6/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson6/main.js" afterDir="false" />
+    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson8/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson8/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,8 @@
       <workItem from="1676886011440" duration="10163000" />
       <workItem from="1676967831158" duration="2547000" />
       <workItem from="1677179318448" duration="9151000" />
-      <workItem from="1677231185177" duration="23645000" />
+      <workItem from="1677231185177" duration="23858000" />
+      <workItem from="1677330653580" duration="14334000" />
     </task>
     <task id="LOCAL-00001" summary="половина">
       <created>1675202816883</created>
@@ -327,7 +328,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677234830787</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="2">
+      <created>1677276312179</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1677276312179</updated>
+    </task>
+    <task id="LOCAL-00036" summary="2">
+      <created>1677276498289</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1677276498289</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,12 +355,12 @@
     <MESSAGE value="new2" />
     <MESSAGE value="залишилось останнє" />
     <MESSAGE value="ready" />
-    <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="4" />
     <MESSAGE value="5" />
     <MESSAGE value="6" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
 </project>
