@@ -23,8 +23,12 @@
         new User(10,'klava','rema','65464@gmail.com','55465465')
 )
 console.log(users);
-  let users1 = [];
-users1.push (
+
+//console.log(users1);
+// Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+
+let users3= [];
+users3.push (
     new User (1,'sasha', 'ivanko','inako@gmail.com', '069599463131'),
     new User(2,'ira','ivanko','123@gmail.com','0968775629'),
     new User (3,'anna','nazarenko','1234gmail.com','0937456699'),
@@ -35,10 +39,17 @@ users1.push (
     new User(8,'sasha','ivanko','112@gmail.com','133265666'),
     new User(9,'pasha','petrenko','155@gmail.com','54654655'),
     new User(10,'klava','rema','65464@gmail.com','55465465')
-)
-//console.log(users1);
-// Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
-//
+);
+function userFilter(users3) {
+        for (let i = 2; i < users3.id; i++) {
+            if (users3.id % i == 0) {
+              return true;
+            }
+
+        }
+
+}
+console.log(users3.filter(userFilter))
 
 
 
@@ -76,11 +87,6 @@ class Client {
         };
     }
 
-    static foobar() {
-    }
-    bar (){
-        console.log(this);
-    }
 }
 let Clients= [];
 Clients.push (
@@ -96,7 +102,7 @@ Clients.push (
     new Client(10,'anna','karpenko','karp@gmail.com','0968772649',['8'])
 );
 console.log(Clients);
-Client.foobar;
+
 
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 let Clients1= [];
@@ -149,11 +155,74 @@ console.log(car1)
 // -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
-// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
-//
-//
-//
+// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт cl
+
+class Car1 {
+    constructor(model, year,maxSpeed,maker, engine) {
+        this.model = model;
+        this.maker = maker;
+        this.year = year;
+        this.maxSpeed = maxSpeed;
+        this.engine = engine;
+        this.drive = function(msg, mesg) {
+            console.log(`${msg}${this.maxSpeed}${mesg}`);
+        };
+        this.info = function(name,value) {
+            console.log(`{model}${this.model}`)
+        };
+        this.increaseMaxSpeed = function (newSpeed) {console.log(this.maxSpeed+=newSpeed)};
+        this.changeYear = function (newValue){'year${this.year'};
+        this.addDriver = function (vodiy) {car.vodiy = vodiy};{
+            console.log(this);
+        }
+
+    };
+}
+let car2=new car('Toyota', '2020','250','USA','1.8');
+
+console.log(car2)
+
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+// ==============================================
+// -створити класс попелюшка з полями ім'я, вік, розмір ноги
+// --Створити 10 попелюшок , покласти їх в масив
+// --Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+// -- за допоиоги циклу знайти яка попелюшка повинна бути з принцом
+// ==============================================
+// let as=[]
+class popelushka{
+    constructor(name, age, size) {
+        this.name = name;
+        this.age = age;
+        this.size = size;
+
+
+    }
+}
+
+let popelushka2 =[];
+popelushka2.push(
+new popelushka('Dasha',12,34),
+new popelushka('Olya',21,35),
+new popelushka('Ira',19,37),
+new popelushka('Karina',40,35),
+new popelushka('Maria',18,36),
+new popelushka('Victoria',22,38),
+new popelushka('Polina',5,26),
+new popelushka('Valeria',27,37),
+new popelushka('Tanya',24,39),
+new popelushka('Sasha',18,36)
+);
+
+console.log(popelushka2)
+class prins{
+     constructor(ar){
+       this.ar=ar}}
+let prinsSergiy=new prins({name:'Sergiy',age:23,size:35})
+ for(let i=0; i<popelushka2.length;i++){
+if(i.size===this.size){console.log('find')}
+ }
+
