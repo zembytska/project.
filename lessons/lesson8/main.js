@@ -27,29 +27,16 @@ console.log(users);
 //console.log(users1);
 // Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 
-let users3= [];
-users3.push (
-    new User (1,'sasha', 'ivanko','inako@gmail.com', '069599463131'),
-    new User(2,'ira','ivanko','123@gmail.com','0968775629'),
-    new User (3,'anna','nazarenko','1234gmail.com','0937456699'),
-    new User (4,'olga','petrenko','1234@gmail.com','0935556698'),
-    new User (5, 'petya','karpenko', '123@gmail.com','096465667899'),
-    new User(6,'vanya','panko','1234@gmail.com','0968885564'),
-    new User(7,'katya','zorya','122@gmail.com','096555889990'),
-    new User(8,'sasha','ivanko','112@gmail.com','133265666'),
-    new User(9,'pasha','petrenko','155@gmail.com','54654655'),
-    new User(10,'klava','rema','65464@gmail.com','55465465')
-);
-function userFilter(users3) {
-        for (let i = 2; i < users3.id; i++) {
-            if (users3.id % i == 0) {
+function userFilter(users) {
+        for (let i = 2; i < users.id; i++) {
+            if (users.id % i == 0) {
               return true;
             }
 
         }
 
 }
-console.log(users3.filter(userFilter))
+console.log(users.filter(userFilter))
 
 
 
@@ -129,23 +116,28 @@ console.log(sort1)
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
-function car ( model, year,maxSpeed,maker, engine){
+function car ( model, year,maxSpeed,maker, engine) {
     this.model = model;
     this.maker = maker;
     this.year = year;
     this.maxSpeed = maxSpeed;
     this.engine = engine;
-    this.drive = function(msg, mesg) {
-        console.log(`${msg}${this.maxSpeed}${mesg}`);
-   };
-    this.info = function(name,value) {
-        console.log(`{model}${this.model}`)
-    };
-    this.increaseMaxSpeed = function (newSpeed) {console.log(this.maxSpeed+=newSpeed)};
-    this.changeYear = function (newValue){'year${this.year'};
-    this.addDriver = function (vodiy) {car.vodiy = vodiy};
-    }
 
+}
+// drive(){
+//     return
+// }
+    // this.drive = function(msg, mesg) {
+    //     console.log(`${msg}${this.maxSpeed}${mesg}`);
+   // };
+   //  this.info = function(name,value) {
+   //      console.log(`{model}${this.model}`)
+   //  };
+   //  this.increaseMaxSpeed = function (newSpeed) {console.log(this.maxSpeed+=newSpeed)};
+   //  this.changeYear = function (newValue){'year${this.year'};
+   //  this.addDriver = function (vodiy) {car.vodiy = vodiy};
+   //  }
+//
 let car1=new car('GMC', '2018','250','USA','1.8');
 console.log(car1)
 
@@ -164,27 +156,59 @@ class Car1 {
         this.year = year;
         this.maxSpeed = maxSpeed;
         this.engine = engine;
-        this.drive = function(msg, mesg) {
-            console.log(`${msg}${this.maxSpeed}${mesg}`);
-        };
-        this.info = function(name,value) {
-            console.log(`{model}${this.model}`)
-        };
-        this.increaseMaxSpeed = function (newSpeed) {console.log(this.maxSpeed+=newSpeed)};
-        this.changeYear = function (newValue){'year${this.year'};
-        this.addDriver = function (vodiy) {car.vodiy = vodiy};{
-            console.log(this);
+    }
+    drive(){
+        return`ідемо зі швидкістю ${this.maxSpeed} на годину`
+    }
+    info (){
+        console.log(`****INFO****`)
+        for (const key in this){
+            console.log(`${key} - {this[key]}`)
         }
-
-    };
+        console.log(`****INFO****`)
+    }
+    increaseMaxSpeed(newSpeed){
+        const speed = this.maxSpeed + newSpeed
+       this.maxSpeed=speed < 0 ? 0: speed;
+    }
+   changeYear (newValue){
+        this.year = newValue;
+    }
+addDriver(name){
+        // this.driver.push(new Driver(name));
 }
-let car2=new car('Toyota', '2020','250','USA','1.8');
-
-console.log(car2)
+}
+class Driver{
+    constructor(name) {
+        this.name = name;
+    }
+}
+        // this.drive = function(msg, mesg) {
+        //     console.log(`${msg}${this.maxSpeed}${mesg}`);
+        // };
+        // this.info = function(name,value) {
+        //     console.log(`{model}${this.model}`)
+        // };
+        // this.increaseMaxSpeed = function (newSpeed) {console.log(this.maxSpeed+=newSpeed)};
+        // this.changeYear = function (newValue){'year${this.year'};
+        // this.addDriver = function (vodiy) {car.vodiy = vodiy};{
+        //     console.log(this);
+        // }
+    //
+    // };
+// }
+const car2=new Car1('Toyota', '2020','250','USA','1.8');
+console.log(car2.drive())
+console.log(car2.info())
+car2.increaseMaxSpeed(300)
+car2.info()
+car2.changeYear(2022);
+car2.info()
+car2.addDriver('max');
 
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 
-class popelushka{
+class popelushka {
     constructor(name, age, size) {
         this.name = name;
         this.age = age;

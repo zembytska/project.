@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="3">
+    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson8/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson8/main.js" afterDir="false" />
     </list>
@@ -90,7 +90,8 @@
       <workItem from="1677231185177" duration="23858000" />
       <workItem from="1677330653580" duration="14362000" />
       <workItem from="1677426993013" duration="19334000" />
-      <workItem from="1677490190480" duration="1979000" />
+      <workItem from="1677490190480" duration="2471000" />
+      <workItem from="1677528428476" duration="3595000" />
     </task>
     <task id="LOCAL-00001" summary="половина">
       <created>1675202816883</created>
@@ -358,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677452434297</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="ready">
+      <created>1677492198528</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1677492198528</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,22 +378,21 @@
     <MESSAGE value="new" />
     <MESSAGE value="new2" />
     <MESSAGE value="залишилось останнє" />
-    <MESSAGE value="ready" />
     <MESSAGE value="4" />
     <MESSAGE value="5" />
     <MESSAGE value="6" />
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lessons/lesson8/main.js</url>
-          <line>208</line>
-          <properties lambdaOrdinal="-1" />
+          <line>232</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
