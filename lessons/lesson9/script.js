@@ -1,40 +1,48 @@
-
 // - створити блок,
 //     - додати йому класи wrap, collapse, alpha, beta
 // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
 // - додати цей блок в body.
 // - клонувати його повністю, та додати клон в body.
 //
+
+let h= document.createElement('h');
+let hBlock = document.createElement('h');
+h.innerText = 'wrap';
+h.style.background = 'gold'
+h.style.color = 'white'
+h.style.fontSize = '30px'
+document.body.appendChild(h)
+h.classList.add('wrap')
+
 // - Є масив:
 //     ['Main','Products','About us','Contacts']
 // Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
 //
 // - Є масив
-let coursesAndDurationArray = [
-     {title: 'JavaScript Complex', monthDuration: 5},
-     {title: 'Java Complex', monthDuration: 6},
-      {title: 'Python Complex', monthDuration: 6},
-     {title: 'QA Complex', monthDuration: 4},
-    {title: 'FullStack', monthDuration: 7},
-    {title: 'Frontend', monthDuration: 4}
- ];
-
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
-
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
 for (const cours of coursesAndDurationArray){
-     let coursBlock = document.createElement('div');
+    let coursBlock = document.createElement('div');
 
-     let title = document.createElement('h2');
-     title.innerText = cours.title;
+    let title = document.createElement('h2');
+    title.innerText = cours.title;
 
-   let p = document.createElement('p');
-      p.innerText = `${cours.title} ${cours.monthDuration}`;
+    let p = document.createElement('p');
+    p.innerText = `${cours.title} ${cours.monthDuration}`;
 
-       coursBlock.append(title, p);
+    coursBlock.append(title, p);
 
-   document.body.appendChild(coursBlock);
- }
+    document.body.appendChild(coursBlock);
+}
+
 // =========================
 //
 //     - Є масив
