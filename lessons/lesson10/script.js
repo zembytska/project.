@@ -1,16 +1,40 @@
 // Стоврити форму з трьома полями для name,sruname,age та кнопкою. При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ.
 // Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
+
 let form = document.forms[0];
 form.onsubmit = function (eo){
     eo.preventDefault();
-
-    console.log(form.username.value);
-console.log(form.surname.value);
-console.log(form.age.value);
+   console.log(form.username.value);
+    console.log(form.surname.value);
+    console.log(form.age.value);
 
 
 };
+let usernameInput = form.username;
+usernameInput.addEventListener(
+    'input',
+    function (eo){
+      console.log(usernameInput.value);
+        target.innerText = usernameInput.value
+    }
+);
 
+let ageInput = form.age;
+ageInput.addEventListener(
+    'input',
+    function (oe){
+      console.log(ageInput.value);
+        target.innerText = ageInput.value
+    }
+);
+let surnameInput = form.surname;
+surnameInput.addEventListener(
+    'input',
+    function (eo){
+        console.log(surnameInput.value);
+        target.innerText = surnameInput.value
+    }
+);
 
         // ==========================
 
