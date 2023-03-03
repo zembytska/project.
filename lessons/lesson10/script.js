@@ -1,27 +1,33 @@
-let coursesAndDurationArray2 = [
-    {title: 'JavaScript Complex', monthDuration: 5},
-    {title: 'Java Complex', monthDuration: 6},
-    {title: 'Python Complex', monthDuration: 6},
-    {title: 'QA Complex', monthDuration: 4},
-    {title: 'FullStack', monthDuration: 7},
-    {title: 'Frontend', monthDuration: 4}
-];
-const body = document.querySelector('body');
-for (const item of  coursesAndDurationArray2){
-    const div = document.createElement('div');
-    const h1 = document.createElement('h1');
-    const p = document.createElement('p')
-}
-const liArr= ['Main','Products','About us','Contacts'];
-// Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
+// Стоврити форму з трьома полями для name,sruname,age та кнопкою. При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ.
+// Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
+let form = document.forms[0];
+form.onsubmit = function (eo){
+    eo.preventDefault();
 
-const body2 = document.querySelector('body2');
-const ul = document.createElement('ul');
+    console.log(form.username.value);
+console.log(form.surname.value);
+console.log(form.age.value);
 
-for (const item of liArr){
-    const li = document.createElement('li');
-    li.innerText = item;
-    ul.appendChild(li);
 
-}
-body.appendChild(ul);
+};
+
+
+        // ==========================
+
+
+// є сторінка, на якій є блок, я кому знаходиьтся цифра. написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
+// ==========================
+// Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessions зберігається інформація про дату та час відвідування сторінки.
+// Є ще сторінка sessions.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html.
+// Інфу НЕ виводити в консоль, а побудувати дом структуру під кожну сессію
+// =========================
+//     зробити масив на 100 об'єктів та дві кнопки prev next
+// при завантажені сторінки з'являються перші 10 об'єктів.
+//     При натисканні next виводяться настпні 10 об'єктів
+// При натисканні prev виводяться попередні 10 об'єктів
+//
+//
+// *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+//     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+// (Додатковачастина для завдання)
+
