@@ -10,6 +10,12 @@ form.onsubmit = function (eo){
 
 
 };
+// let headingElement = document.getElementById("main-heading");
+// console.log(headingElement.innerHTML);
+// let newHeadingText = prompt("name:");
+// let newHeadingText2 = prompt("age");
+// headingElement.innerHTML = newHeadingText;
+// headingElement.innerHTML = newHeadingText2;
 let usernameInput = form.username;
 usernameInput.addEventListener(
     'input',
@@ -22,9 +28,9 @@ usernameInput.addEventListener(
 let ageInput = form.age;
 ageInput.addEventListener(
     'input',
-    function (oe){
+    function (eo){
       console.log(ageInput.value);
-        target.innerText = ageInput.value
+        target2.innerText = ageInput.value
     }
 );
 let surnameInput = form.surname;
@@ -32,7 +38,7 @@ surnameInput.addEventListener(
     'input',
     function (eo){
         console.log(surnameInput.value);
-        target.innerText = surnameInput.value
+        target3.innerText = surnameInput.value
     }
 );
 
