@@ -51,6 +51,30 @@ surnameInput.addEventListener(
 // при завантажені сторінки з'являються перші 10 об'єктів.
 //     При натисканні next виводяться настпні 10 об'єктів
 // При натисканні prev виводяться попередні 10 об'єктів
+let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+let currentIndex =0;
+let currentLimit =10;
+button2.onclick =function showArray(){
+    for (;currentIndex <currentLimit &&currentIndex <arr.length;currentIndex++){
+        block.innerHTML +=arr[currentIndex]+"<br/>"
+    };
+    currentLimit++;
+}
+
+
+newButton.onclick = ((currentPosition= 0)=> ()=>{
+    if (currentPosition <arr.length){
+        block.innerHTML +=arr[currentPosition++] +"<br />"
+    };
+
+})();
+
+// newButton2.onclick = ((currentPosition = 0)=> ()=>{
+//     if (currentPosition <arr.length){
+//         block.innerHTML +=arr[currentPosition++]+"<br/>"
+//     };
+//
+// })();
 //
 //
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
