@@ -10,12 +10,7 @@ form.onsubmit = function (eo){
 
 
 };
-// let headingElement = document.getElementById("main-heading");
-// console.log(headingElement.innerHTML);
-// let newHeadingText = prompt("name:");
-// let newHeadingText2 = prompt("age");
-// headingElement.innerHTML = newHeadingText;
-// headingElement.innerHTML = newHeadingText2;
+
 let usernameInput = form.username;
 usernameInput.addEventListener(
     'input',
@@ -46,6 +41,7 @@ surnameInput.addEventListener(
 
 
 // є сторінка, на якій є блок, я кому знаходиьтся цифра. написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
+
 // ==========================
 // Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessions зберігається інформація про дату та час відвідування сторінки.
 // Є ще сторінка sessions.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html.
