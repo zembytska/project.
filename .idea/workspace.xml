@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="!">
+      <change afterPath="$PROJECT_DIR$/lessons/lesson10/index.html2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lessons/lesson10/index.html3+.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lessons/lesson10/index.html3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lessons/lesson10/index.html4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson10/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson10/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson10/script.js" afterDir="false" />
@@ -100,6 +104,8 @@
       <workItem from="1677877583438" duration="3226000" />
       <workItem from="1677936542129" duration="5046000" />
       <workItem from="1678047952416" duration="6521000" />
+      <workItem from="1678078495142" duration="2570000" />
+      <workItem from="1678081114101" duration="8507000" />
     </task>
     <task id="LOCAL-00001" summary="половина">
       <created>1675202816883</created>
@@ -428,6 +434,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="половина" />
