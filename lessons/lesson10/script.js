@@ -1,41 +1,7 @@
 // Стоврити форму з трьома полями для name,sruname,age та кнопкою. При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ.
 // Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
 
-let form = document.forms[0];
-form.onsubmit = function (eo){
-    eo.preventDefault();
-   console.log(form.username.value);
-    console.log(form.surname.value);
-    console.log(form.age.value);
 
-
-};
-
-let usernameInput = form.username;
-usernameInput.addEventListener(
-    'input',
-    function (eo){
-      console.log(usernameInput.value);
-        target.innerText = usernameInput.value
-    }
-);
-
-let ageInput = form.age;
-ageInput.addEventListener(
-    'input',
-    function (eo){
-      console.log(ageInput.value);
-        target2.innerText = ageInput.value
-    }
-);
-let surnameInput = form.surname;
-surnameInput.addEventListener(
-    'input',
-    function (eo){
-        console.log(surnameInput.value);
-        target3.innerText = surnameInput.value
-    }
-);
 
         // ==========================
 
@@ -51,35 +17,60 @@ surnameInput.addEventListener(
 // при завантажені сторінки з'являються перші 10 об'єктів.
 //     При натисканні next виводяться настпні 10 об'єктів
 // При натисканні prev виводяться попередні 10 об'єктів
-let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-let currentIndex =0;
- let currentLimit =10;
-
-button2.onclick =function showArray(){
-    for (;currentIndex <currentLimit &&currentIndex <arr.length;currentIndex++){
-        block.innerHTML +=arr[currentIndex]+"<br/>"
-    };
-    currentLimit++;
-}
-
-newButton.onclick = ((currentPosition= 0)=> ()=>{
-    if (currentPosition <arr.length){
-        block.innerHTML +=arr[currentPosition++] +"<br />"
-    };
-
-})();
 
 
-
-// newButton2.onclick = ((currentPosition = 0)=> ()=>{
-//     if (currentPosition <arr.length){
-//         block.innerHTML +=arr[currentPosition++]+"<br/>"
-//     };
+    // const json = localStorage.getItem('sessions');
+    // const sessions = json ? JSON.parse(json) : [];
+    //
+    // for (const session of sessions) {
+    // const wrapper = document.createElement('div');
+    // const date = document.createElement('div');
+    // const time = document.createElement('div');
+    // const device = document.createElement('div');
+    //
+    // wrapper.classList.add('wrapper', 'item');
+    //
+    // const dateObj = format(session.date);
+    //
+    // date.innerText = `Date: ${dateObj.DD}/${dateObj.MM}/${dateObj.YYYY}`;
+    // time.innerText = `Time: ${dateObj.hh}:${dateObj.mm}:${dateObj.ss}`;
+    // device.innerText = `Device: ${session.appCodeName} / ${session.appVersion}`
+    //
+    // wrapper.append(date, time, device);
+    // document.body.appendChild(wrapper);
+// }
 //
-// })();
+//     function format(dateString) {
+//     const qwe = new Date(dateString);
+//
+//     const YYYY = qwe.getFullYear().toString();
+//     const MM = (qwe.getMonth() + 1).toString();
+//     const DD = qwe.getDate().toString();
+//     const hh = qwe.getHours().toString();
+//     const mm = qwe.getMinutes().toString();
+//     const ss = qwe.getSeconds().toString();
+//
+//     return {
+//     YYYY: YYYY,
+//     MM: MM.length < 2 ? `0${MM}` : MM,
+//     DD: DD.length < 2 ? `0${DD}` : DD,
+//     hh: hh.length < 2 ? `0${hh}` : hh,
+//     mm: mm.length < 2 ? `0${mm}` : mm,
+//     ss: ss.length < 2 ? `0${ss}` : ss,
+// }
+// }
+// const json = localStorage.getItem('sessions');
+// const sessions = json ? JSON.parse(json) : [];
+//
+// sessions.push({
+//     date: new Date().toISOString(),
+//     appCodeName: navigator.appCodeName,
+//     appVersion: navigator.appVersion,
+// });
+//
+// localStorage.setItem('sessions', JSON.stringify(sessions));
 //
 //
-// *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
-//     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
-// (Додатковачастина для завдання)
-
+//
+//
+//

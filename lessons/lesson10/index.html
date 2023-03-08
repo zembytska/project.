@@ -8,39 +8,61 @@
     <title>Document</title>
 </head>
 <body>
-<div class="target"></div>
-<div class="target2"></div>
-<div class="target3"></div>
-<div class="block"></div>
-<button class="new-button">next</button>
-<button class="button2">prev</button>
-<div class="block2"></div>
-
-
-
-
-    <form>
-
-        <input type="text"name="username" placeholder="name">
-    <br>
-        <input type="text"name="surname" placeholder="surname">
-<br>
-    <input type="number"name="age" placeholder="age">
-
-        <button>save</button>
-        <br>
-
-
-
+<style>
+    .form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        border: blue 2px solid;
+    }
+    .wrapper {
+        width: 350px;
+        padding: 10px;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .item {
+        margin-top: 10px;
+        border: red 2px solid;
+    }
+</style>
+</head>
+<body>
+<form name="creator" class="form wrapper">
+    <label class="flex">Name:<input type="text" name="name"></label>
+    <label class="flex">Surname:<input type="text" name="surname"></label>
+    <label class="flex">Age:<input type="number" name="age"></label>
+    <button>Create</button>
+</form>
 <script>
+    // Стоврити форму з трьома полями для name,sruname,age та кнопкою. При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ. Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
 
-let target = document.querySelector('.target');
-let target2= document.querySelector('.target2');
-let target3=document.querySelector('.target3');
-let newButton = document.querySelector('.new-button');
-let block = document.querySelector('.block');
-let button2 = document.querySelector('.button2');
-let block2 = document.querySelector('.block2')
+    const form = document.forms.creator;
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        if(!this.name.value || this.name.value.length < 3) {
+            return alert('Wrong name');
+        }
+
+        const wrapper = document.createElement('div');
+        const name = document.createElement('div');
+        const surname = document.createElement('div');
+        const age = document.createElement('div');
+
+        name.innerText = `Name: ${this.name.value}`;
+        surname.innerText = `Surname: ${this.surname.value}`;
+        age.innerText = `Age: ${this.age.value}`;
+
+        this.name.value = '';
+        this.surname.value = '';
+        this.age.value = '';
+
+        wrapper.append(name, surname, age);
+        document.body.appendChild(wrapper);
+    });
 
 </script>
 </body><script src="script.js"></script>

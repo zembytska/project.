@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="!">
-      <change afterPath="$PROJECT_DIR$/lessons/lesson10/index.html2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lessons/lesson10/index.html3+.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lessons/lesson10/index.html3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lessons/lesson10/index.html4.html" afterDir="false" />
+    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="half">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson10/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/lesson10/index.html3+.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson10/index.html3+.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/lesson10/index.html3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson10/index.html3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/lesson10/index.html4.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson10/index.html4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/lesson10/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/lesson10/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +104,8 @@
       <workItem from="1677936542129" duration="5046000" />
       <workItem from="1678047952416" duration="6521000" />
       <workItem from="1678078495142" duration="2570000" />
-      <workItem from="1678081114101" duration="8507000" />
+      <workItem from="1678081114101" duration="8821000" />
+      <workItem from="1678308348522" duration="1575000" />
     </task>
     <task id="LOCAL-00001" summary="половина">
       <created>1675202816883</created>
@@ -429,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678003548707</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="half">
+      <created>1678132195715</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1678132195715</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +468,8 @@
     <MESSAGE value="ready2" />
     <MESSAGE value="1" />
     <MESSAGE value="!" />
-    <option name="LAST_COMMIT_MESSAGE" value="!" />
+    <MESSAGE value="half" />
+    <option name="LAST_COMMIT_MESSAGE" value="half" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
