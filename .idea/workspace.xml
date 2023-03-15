@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/lessons/PROJECT/post-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lessons/PROJECT/post-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lessons/PROJECT/user-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/post-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/post-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/user-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/user-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/user-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/user-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/xxxx.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/xxxx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +132,7 @@
       <workItem from="1678792691206" duration="323000" />
       <workItem from="1678793900315" duration="19734000" />
       <workItem from="1678858765989" duration="21167000" />
+      <workItem from="1678903578665" duration="11416000" />
     </task>
     <task id="LOCAL-00008" summary="1">
       <created>1675807310288</created>
@@ -524,12 +524,6 @@
           <url>file://$PROJECT_DIR$/lessons/PROJECT/xxxx.html</url>
           <line>12</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lessons/PROJECT/post-index.js</url>
-          <line>3</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

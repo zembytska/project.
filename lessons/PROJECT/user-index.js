@@ -40,18 +40,6 @@ console.log(url3);
 let id = url3.searchParams.get('id');
 console.log(id);
 
-
-
-// fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
-//
-//     .then(resp => resp.json())
-//     .then(posts => {
-//         for (const post of posts) {
-//             let ul = document.createElement('ul');
-//             ul.innerText = post.title;
-//             document.body.appendChild(ul);
-//         }
-//     });
  fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
 
     .then(resp => resp.json())
@@ -63,7 +51,7 @@ console.log(id);
              li.innerText = post.title;
              ul.appendChild(li);
              let a= document.createElement('a');
-             a.href = `post-index.html?data=`+ JSON.stringify(user);
+             a.href = `post-index.html?data=${post.id}`;
              a.innerText = "user";
              li.appendChild(a);
 
@@ -71,13 +59,3 @@ console.log(id);
          }
      });
 
-// /fetch ('https://jsonplaceholder.typicode.com/posts')
-//     .then((response) => response.json())
-//     .then(posts => {
-//          {
-//             let a= document.createElement('a');
-//             a.href = `xxxx.html`;
-//
-//             document.body.appendChild(a);
-//         }
-//     });
