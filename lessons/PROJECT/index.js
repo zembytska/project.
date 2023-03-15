@@ -1,17 +1,35 @@
-let url = new URL ('https://jsonplaceholder.typicode.com/users')
-fetch(url)
-    .then((response) => response.json())
-    .then(users => {
-        for (const user of users){
-            let div = document.createElement('div');
-            div.innerText = `${user.id} ${user.name} `;
-            let a= document.createElement('a');
-            a.href = `user-index.html?data=` + JSON.stringify(user);
-            a.innerText = "user";
-            div.appendChild(a);
-            document.body.appendChild(div);
-        }
-    });
+// // let url = new URL ('https://jsonplaceholder.typicode.com/users')
+// // fetch(url)
+// //     .then((response) => response.json())
+// //     .then(users => {
+// //         for (const user of users){
+// //             let div = document.createElement('div');
+// //             div.innerText = `${user.id} ${user.name} `;
+// //             let a= document.createElement('a');
+// //             a.href = `user-index.html?data=` + JSON.stringify(user);
+// //             a.innerText = "user";
+// //             div.appendChild(a);
+// //             document.body.appendChild(div);
+// //         }
+// //     });
+//  let url = new URL(location.href);
+//  let json = url.searchParams.get('id');
+//  let user = JSON.parse(json);
+//  console.log(user)
+//
+// fetch ('https://jsonplaceholder.typicode.com/users')
+//     .then((response) => response.json())
+//     .then(users => {
+//         for (const user of users) {
+//             let div = document.createElement('div');
+//             div.innerText = `${user.id} ${user.name} `;
+//             let a= document.createElement('a');
+//             a.href = `xxxx.html?id=${user.id}`;
+//             a.innerText = "user";
+//             div.appendChild(a);
+//             document.body.appendChild(div);
+//         }
+//     });
 
 
 // <!--На странице xxxx.html:-->

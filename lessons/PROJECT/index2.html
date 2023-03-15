@@ -10,7 +10,7 @@
 <body>
 
 <script>
-     fetch ('https://jsonplaceholder.typicode.com/users')
+      fetch ('https://jsonplaceholder.typicode.com/users')
          .then((response) => response.json())
          .then(users => {
            for (const user of users) {
@@ -18,11 +18,11 @@
                  div.innerText = `${user.name} `;
                 let a= document.createElement('a');
                  a.href = `xxxx.html?id=${user.id}`;
-               a.innerText = "user";
+                a.innerText = "user";
                  div.appendChild(a);
-                 document.body.appendChild(div);
-             }
-         });
+                  document.body.appendChild(div);
+              }
+          });
 
 
 </script>
