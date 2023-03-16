@@ -50,12 +50,72 @@ console.log(id);
              let li = document.createElement('li');
              li.innerText = post.title;
              ul.appendChild(li);
-             let a= document.createElement('a');
-             a.href = `post-index.html?data=${post.id}`;
-             a.innerText = "user";
-             li.appendChild(a);
+             //let a= document.createElement('a');
+             //a.href = `post-index.html?data=${post.id}`;
+             //a.innerText = "user";
+            // li.appendChild(a);
 
              document.body.appendChild(ul);
          }
      });
+ // fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
+ //
+ //     .then(resp => resp.json())
+ //     .then(posts => {
+ //         for (const post of posts) {
+ //             let ul = document.createElement('ul');
+ //
+ //             let li = document.createElement('li');
+ //             li.innerText = post.title + user.id;
+ //             ul.appendChild(li);
+ //            let a= document.createElement('a');
+ //            a.href = `post-index.html?data=${post.id}`;
+ //            a.innerText = "user";
+ //            li.appendChild(a);
+ //
+ //             document.body.appendChild(ul);
+ //        }
+ //    });
 
+
+
+
+
+
+let url4 = new URL(location.href);
+console.log(url4);
+let im = url4.searchParams.get('im');
+console.log(im);
+
+
+fetch(`https://jsonplaceholder.typicode.com/users/${im}/posts`)
+
+    .then(resp => resp.json())
+    .then(posts => {
+        for (const post of posts) {
+            let ul = document.createElement('ul');
+
+            let li = document.createElement('li');
+            li.innerText = post.title ;
+            ul.appendChild(li);
+
+            document.body.appendChild(ul);
+        }
+    });
+
+fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
+
+    .then(resp => resp.json())
+    .then(posts => {
+        for (const post of posts) {
+            let ul = document.createElement('ul');
+
+            let li = document.createElement('li');
+            ul.appendChild(li);
+            let a= document.createElement('a');
+            a.href = `post-index.html?data=${post.id}`;
+            a.innerText = "post";
+            li.appendChild(a);
+            document.body.appendChild(ul);
+        }
+    });

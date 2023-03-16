@@ -8,14 +8,16 @@ fetch(url)
     .then((response) => response.json())
     .then(users => {
         for (const user of users){
-            let div = document.createElement('div');
-            div.innerText = `${user.id} ${user.name} `;
+            let userBlock = document.createElement('h3');
+            userBlock.innerText = `${user.id} ${user.name} `;
             let a= document.createElement('a');
             a.href = `user-index.html?data=`+ JSON.stringify(user);
             a.innerText = "user";
+
             //a.href = `user-index.html?id=${user.id}`;
-            div.appendChild(a);
-            document.body.appendChild(div);
+            userBlock.appendChild(a);
+
+            document.body.appendChild(userBlock);
         }
     });
 

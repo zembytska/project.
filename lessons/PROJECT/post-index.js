@@ -7,6 +7,22 @@ console.log(url);
 let data = url.searchParams.get('data');
 console.log(data);
 
+
+fetch(`https://jsonplaceholder.typicode.com/users/${data}/posts`)
+
+    .then(resp => resp.json())
+    .then(posts => {
+        for (const post of posts) {
+            let ul = document.createElement('ul');
+
+            let li = document.createElement('li');
+            li.innerText = `${post.id} ${post.title} ${post.body}`;
+            ul.appendChild(li);
+
+
+            document.body.appendChild(ul);
+        }
+    });
 fetch(`https://jsonplaceholder.typicode.com/posts/${data}/comments`)
 
     .then(resp => resp.json())
@@ -20,4 +36,3 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${data}/comments`)
             document.body.appendChild(ul);
         }
     });
-
