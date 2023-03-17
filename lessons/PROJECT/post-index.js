@@ -31,8 +31,15 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${data}/comments`)
             let ul = document.createElement('ul');
 
             let li = document.createElement('li');
-            li.innerText = post.body;
+            li.innerText = `${post.body} `;
             ul.appendChild(li);
             document.body.appendChild(ul);
         }
     });
+let url5 = new URL(location.href);
+console.log(url5);
+let m = url5.searchParams.get('m');
+console.log(m);
+
+
+
