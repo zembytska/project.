@@ -21,27 +21,14 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
 fetch ('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then(users => {
-        let div = document.createElement('div');
-
-        let a= document.createElement('a');
-
-        a.href = `user-index.html?id=${user.id}`;
-        a.innerText = "post of current user";
-        div.appendChild(a);
-        document.body.appendChild(div);
+        let div1 = document.createElement('div1');
+        let a1= document.createElement('a');
+        a1.href = `user-index.html?id=${user.id}`;
+        a1.innerText = "post of current user";
+        div1.appendChild(a1);
+        document.body.appendChild(div1);
 
     });
-
-
-
-
-
-
-
-
-
-
-
 
 let url3 = new URL(location.href);
 console.log(url3);
@@ -53,17 +40,18 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
     .then(resp => resp.json())
     .then(posts => {
         for (const post of posts) {
-            let ul = document.createElement('ul');
+            let div2 = document.createElement('div2');
+            let li2= document.createElement('li2');
 
-            let li = document.createElement('li');
-            li.innerText = post.title;
-            ul.appendChild(li);
-            let a= document.createElement('a');
-            a.href = `post-index.html?data=${post.id}`;
-            a.innerText = "user";
-            li.appendChild(a);
+            li2.innerText = post.title;
+            //ul.appendChild(li);
+            let a2= document.createElement('a2');
+            a2.href = `post-index.html?data=${post.id}`;
+            a2.innerText = "user";
 
-            document.body.appendChild(ul);
+           div2.appendChild(li2);
+            div2.appendChild(a2);
+            document.body.appendChild(div2);
         }
     });
 fetch(`https://jsonplaceholder.typicode.com/users/${m}/posts`)
