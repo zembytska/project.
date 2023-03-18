@@ -25,21 +25,41 @@
 //         }
 //     });
 
+// let url = new URL ('https://jsonplaceholder.typicode.com/users')
+// fetch(url)
+//     .then((response) => response.json())
+//     .then(users => {
+//         for (const user of users){
+//             let userBlock = document.createElement('div');
+//             let div = document.createElement('div');
+//             let ul = document.createElement(ul)
+//             userBlock.innerText = `${user.id} ${user.name} `;
+//             let a= document.createElement('a');
+//             a.href = `user-index.html?data=`+ JSON.stringify(user);
+//             a.innerText = "user";
+// userBlock.appendChild(div)
+           //a.href = `user-index.html?data=${user.id}`;
+            // userBlock.appendChild(a);
+            //
+            // document.body.appendChild(userBlock);
+        // }
+    // });
 let url = new URL ('https://jsonplaceholder.typicode.com/users')
 fetch(url)
     .then((response) => response.json())
     .then(users => {
         for (const user of users){
-            let userBlock = document.createElement('h3');
-            userBlock.innerText = `${user.id} ${user.name} `;
+            let div  = document.createElement('div');
+            let li = document.createElement('li')
+            li.innerText = `${user.id} ${user.name} `;
             let a= document.createElement('a');
             a.href = `user-index.html?data=`+ JSON.stringify(user);
             a.innerText = "user";
-
-           // a.href = `user-index.html?data=${user.id}`;
-            userBlock.appendChild(a);
-
-            document.body.appendChild(userBlock);
+            div.appendChild(li)
+             //a.href = `user-index.html?data=${user.id}`;
+            div.appendChild(a);
+            li.style.color ="green"
+            document.body.appendChild(div);
         }
     });
 

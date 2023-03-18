@@ -1,15 +1,8 @@
 
-// <!--На странице xxxx.html:-->
-// <!--4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули-->
-// <!--5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера-->
-//<!--(для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)-->
-// <!--6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-index.html, котра має детальну інфу про поточний пост.-->
-
-
- let url = new URL(location.href);
- let json = url.searchParams.get('data');
- let user = JSON.parse(json);
- console.log(user)
+let url = new URL(location.href);
+let json = url.searchParams.get('data');
+let user = JSON.parse(json);
+console.log(user)
 
 fetch(`https://jsonplaceholder.typicode.com/users`)
     .then((response) => response.json())
@@ -19,6 +12,9 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
 
         ul.innerText =`${user.id} ${user.name} ${user.username} ${user.email}` +'address'+ JSON.stringify(user.address) + 'company' + JSON.stringify(user.company) + 'email' +JSON.stringify(user.email) + 'id' + JSON.stringify(user.id)+  'name' + JSON.stringify(user.name) + 'phone' + JSON.stringify(user.phone) + 'username' +
             JSON.stringify(user.username) + 'website' +JSON.stringify(user.website);
+        ul.style.color = "green";
+        ul.style.fontSize ="15px";
+        ul.style.fontFamily
         document.body.appendChild(ul);
 
     });
@@ -57,15 +53,15 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
     .then(resp => resp.json())
     .then(posts => {
         for (const post of posts) {
-             let ul = document.createElement('ul');
+            let ul = document.createElement('ul');
 
-              let li = document.createElement('li');
-              li.innerText = post.title;
-              ul.appendChild(li);
+            let li = document.createElement('li');
+            li.innerText = post.title;
+            ul.appendChild(li);
             let a= document.createElement('a');
             a.href = `post-index.html?data=${post.id}`;
-             a.innerText = "user";
-             li.appendChild(a);
+            a.innerText = "user";
+            li.appendChild(a);
 
             document.body.appendChild(ul);
         }

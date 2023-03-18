@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="fon">
-      <change afterPath="$PROJECT_DIR$/lessons/PROJECT/22.html" afterDir="false" />
+    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="18.03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/22.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/22.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/post-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/post-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/user-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/user-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/user-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/user-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/xxxx.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/xxxx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Оля/IdeaProjects/js/lessons/PROJECT/index.js&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Оля/IdeaProjects/js/lessons/PROJECT/project.html&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -137,14 +138,9 @@
       <workItem from="1679038324337" duration="23343000" />
       <workItem from="1679067739047" duration="143000" />
       <workItem from="1679067924065" duration="18391000" />
-      <workItem from="1679089686182" duration="5049000" />
-    </task>
-    <task id="LOCAL-00012" summary="ready">
-      <created>1675952626005</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1675952626005</updated>
+      <workItem from="1679089686182" duration="5242000" />
+      <workItem from="1679119867227" duration="10902000" />
+      <workItem from="1679132589312" duration="19424000" />
     </task>
     <task id="LOCAL-00013" summary="2">
       <created>1676069207342</created>
@@ -482,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679088538207</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="18.03">
+      <created>1679094818933</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1679094818933</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +521,8 @@
     <MESSAGE value="17.03" />
     <MESSAGE value="17.032" />
     <MESSAGE value="fon" />
-    <option name="LAST_COMMIT_MESSAGE" value="fon" />
+    <MESSAGE value="18.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -36,10 +36,10 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${data}/comments`)
             document.body.appendChild(ul);
         }
     });
-let url5 = new URL(location.href);
-console.log(url5);
-let m = url5.searchParams.get('m');
-console.log(m);
+// let url5 = new URL(location.href);
+// console.log(url5);
+// let m = url5.searchParams.get('m');
+// console.log(m);
 
 
 
