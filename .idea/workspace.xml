@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="18.03">
+    <list default="true" id="e51d7c4b-b1e8-4837-89fa-91541c45e212" name="Changes" comment="19.03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/post-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/post-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/post-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/post-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/user-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/user-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/PROJECT/user-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/user-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons/PROJECT/xxxx.html" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/PROJECT/xxxx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,14 +139,8 @@
       <workItem from="1679089686182" duration="5242000" />
       <workItem from="1679119867227" duration="10902000" />
       <workItem from="1679132589312" duration="19424000" />
-      <workItem from="1679171017176" duration="7950000" />
-    </task>
-    <task id="LOCAL-00013" summary="2">
-      <created>1676069207342</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1676069207342</updated>
+      <workItem from="1679171017176" duration="8214000" />
+      <workItem from="1679211390633" duration="26656000" />
     </task>
     <task id="LOCAL-00014" summary="3">
       <created>1676109140398</created>
@@ -481,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679094818933</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="19.03">
+      <created>1679180960584</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1679180960584</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +522,8 @@
     <MESSAGE value="17.032" />
     <MESSAGE value="fon" />
     <MESSAGE value="18.03" />
-    <option name="LAST_COMMIT_MESSAGE" value="18.03" />
+    <MESSAGE value="19.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="19.03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

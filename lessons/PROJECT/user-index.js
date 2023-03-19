@@ -30,45 +30,27 @@ fetch ('https://jsonplaceholder.typicode.com/users')
 
     });
 
-let url3 = new URL(location.href);
-console.log(url3);
-let id = url3.searchParams.get('id');
-console.log(id);
 
-fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
+  let url3 = new URL(location.href);
+  console.log(url3);
+  let id = url3.searchParams.get('id');
+  console.log(id);
+  fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
 
-    .then(resp => resp.json())
-    .then(posts => {
-        for (const post of posts) {
-            let div2 = document.createElement('div2');
-            let li2= document.createElement('li2');
+      .then(resp => resp.json())
+      .then(posts => {
+          for (const post of posts) {
+              let div2 = document.createElement('div2');
 
-            li2.innerText = post.title;
-            //ul.appendChild(li);
-            let a2= document.createElement('a2');
-            a2.href = `post-index.html?data=${post.id}`;
-            a2.innerText = "user";
+              let li2 = document.createElement('li2');
+              li2.innerText = `${post.title}`;
+              div2.appendChild(li2);
+               let a= document.createElement('a');
+               a.href = `post-index.html?data=${post.id}`;
+              a.innerText = " title  ";
+               div2.appendChild(a);
 
-           div2.appendChild(li2);
-            div2.appendChild(a2);
-            document.body.appendChild(div2);
-        }
-    });
-fetch(`https://jsonplaceholder.typicode.com/users/${m}/posts`)
-
-    .then(resp => resp.json())
-    .then(posts => {
-        for (const post of posts) {
-            let ul = document.createElement('ul');
-
-            let li = document.createElement('li');
-            li.innerText = post.title;
-            ul.appendChild(li);
-
-            document.body.appendChild(ul);
-        }
-    });
-
-
-
+              document.body.appendChild(div2);
+          }
+      });
 
